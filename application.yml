@@ -1,3 +1,4 @@
+---
 test: ceva123
 eureka:
   client:
