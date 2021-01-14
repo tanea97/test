@@ -1,18 +1,13 @@
-test: ceva123
 eureka:
   client:
     serviceUrl:
-       defaultZone: http://localhost:8010/eureka/
-#        defaultZone: http://localhost:9004/eureka/
-#        defaultZone: http://eureka-secondary:9004/eureka/,http://eureka-secondary:9002/eureka/,http://eureka-tertiary:9003/eureka/
-
-
-
+       defaultZone: http://localhost:8010/
+       
 ---
 spring:
   profiles: subject
-#   application:
-#     name: LAB-4-SUBJECT
+  application:
+    name: LAB-4-SUBJECT
 words: I,You,He,She,It
 server:
   port: 8012
@@ -21,8 +16,8 @@ server:
 ---
 spring:
   profiles: verb
-#   application:
-#     name: LAB-4-VERB
+  application:
+    name: LAB-4-VERB
 words: ran,knew,had,saw,bought
 server:
   port: 8013
@@ -30,8 +25,8 @@ server:
 ---
 spring:
   profiles: article
-#   application:
-#     name: LAB-4-ARTICLE
+  application:
+    name: LAB-4-ARTICLE
 words: a,the
 server:
   port: 8014
@@ -39,8 +34,8 @@ server:
 ---
 spring:
   profiles: adjective
-#   application:
-#     name: LAB-4-ADJECTIVE
+  application:
+    name: LAB-4-ADJECTIVE
 words: reasonable,leaky,suspicious,ordinary,unlikely
 server:
   port: 8015
@@ -48,8 +43,8 @@ server:
 ---
 spring:
   profiles: noun
-#   application:
-#     name: LAB-4-NOUN
+  application:
+    name: LAB-4-NOUN
 words: boat,book,vote,seat,backpack,partition,groundhog
 server:
   port: 8016
